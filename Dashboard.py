@@ -5,9 +5,13 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-total_sales_per_category_df = pd.read_csv("C:/Users/imanu/Downloads/total_sales_per_category_df.csv")
-orders_revenue_df = pd.read_csv("C:/Users/imanu/Downloads/orders_revenue_df.csv")
-rfm_df = pd.read_csv("C:/Users/imanu/Downloads/rfm_df.csv")
+url1 = "https://raw.githubusercontent.com/Imanueldika/Assesment-Dicoding_Dashboard/main/total_sales_per_category_df.csv"
+url2 = "https://raw.githubusercontent.com/Imanueldika/Assesment-Dicoding_Dashboard/main/orders_revenue_df.csv"
+url3 = "https://raw.githubusercontent.com/Imanueldika/Assesment-Dicoding_Dashboard/main/rfm_df.csv"
+
+total_sales_per_category_df = pd.read_csv(url1)
+orders_revenue_df = pd.read_csv(url2)
+rfm_df = pd.read_csv(url3)
 
 st.header('E-Commerce Public Dashboard :sparkles:')
 
